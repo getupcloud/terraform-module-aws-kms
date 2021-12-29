@@ -18,7 +18,7 @@ variable "region" {
   type        = string
 }
 
-variable "kms_id" {
+variable "key_id" {
   description = "AWS KMS ID to flux automatically handle"
   type        = string
 }
