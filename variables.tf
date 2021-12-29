@@ -8,24 +8,19 @@ variable "customer_name" {
   type        = string
 }
 
-variable "customer_name" {
-  description = "customer name"
+variable "account_id" {
+  description = "account id aws name"
   type        = string
 }
 
-variable "customer_name" {
-  description = "customer name"
+variable "region" {
+  description = "region name"
   type        = string
 }
 
 variable "kms_id" {
   description = "AWS KMS ID to flux automatically handle"
   type        = string
-
-  validation {
-    condition     = length(var.key_id) > 0
-    error_message = "The key_id value must not be empty."
-  }
 }
 
 variable "cluster_oidc_issuer_url" {
